@@ -79,11 +79,13 @@ if ( sNome == sNome ){
 
 alert("Hello wolrd, Boas vindas ao jogo do número secreto");
 let numeroSecreto = 99;
- chute = prompt("Escolha um número entre 0 a 100");
+let chute;
+let tentativas =1; 
 
 while ( chute != numeroSecreto ){
-
+chute = prompt("Escolha um número entre 0 a 100");
  if (chute == numeroSecreto ){
+ break;
 
  }else{
     if (chute > numeroSecreto){
